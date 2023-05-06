@@ -3,9 +3,9 @@
 
 // sass --watch assets/css/style.scss assets/css/index.css
 
-* {
-    border: 3px solid blue;
-}
+// * {
+//     border: 3px solid blue;
+// }
 
 html,
 body {
@@ -280,9 +280,14 @@ a {
 
 .qui-sommes-nous {
 
+    * {
+        border: 3px solid blue;
+    }
+
     .qsn-container {
         height: 60vh;
         width: 100%;
+
         // display: flex;
         // align-items: flex-start;
         // justify-content: center;
@@ -292,14 +297,12 @@ a {
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+
         border: 1px solid red;
 
 
 
         .qsn-photo {
-
-            // width: 45%;
-            // height: 450px;
 
             grid-area: 1 / 1 / 4 / 4;
 
@@ -310,6 +313,11 @@ a {
 
         .qsn-txt {
             grid-area: 3 / 3 / 6 / 6;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
 
             // width: 45%;
             padding: 15px;
@@ -354,7 +362,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 3px solid blue;
     }
 
 
