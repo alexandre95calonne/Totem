@@ -224,22 +224,22 @@ a {
 .qui-sommes-nous .qsn-container {
   height: 60vh;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   border: 1px solid red;
 }
 .qui-sommes-nous .qsn-container .qsn-photo {
-  width: 45%;
-  height: 450px;
+  grid-area: 1/1/4/4;
 }
 .qui-sommes-nous .qsn-container .qsn-photo img {
   width: 100%;
 }
 .qui-sommes-nous .qsn-container .qsn-txt {
-  width: 45%;
+  grid-area: 3/3/6/6;
   padding: 15px;
-  align-self: flex-end;
   border: 3px solid #A1C862;
   border-radius: 4px;
 }
