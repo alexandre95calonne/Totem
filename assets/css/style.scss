@@ -280,12 +280,12 @@ a {
 
 .qui-sommes-nous {
 
-    * {
-        border: 3px solid blue;
-    }
+    // * {
+    //     border: 3px solid blue;
+    // }
 
     .qsn-container {
-        height: 60vh;
+        height: 75vh;
         width: 100%;
 
         // display: flex;
@@ -298,13 +298,13 @@ a {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
-        border: 1px solid red;
+        // border: 1px solid red;
 
 
 
         .qsn-photo {
-
             grid-area: 1 / 1 / 4 / 4;
+            max-width: 50vw;
 
             img {
                 width: 100%;
@@ -313,25 +313,32 @@ a {
 
         .qsn-txt {
             grid-area: 3 / 3 / 6 / 6;
+            // max-height: 30vh;
+            width: -moz-fit-content;
+            width: fit-content;
+
+            align-self: end;
 
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: justify;
 
+            background-color: #fff;
 
-            // width: 45%;
+            border: 4px solid #A1C862;
+            border-radius: 10px;
+
             padding: 15px;
-            // align-self: flex-end;
-            border: 3px solid #A1C862;
-            border-radius: 4px;
 
             p {
+                margin: 0;
+
                 font-size: 22px;
                 font-weight: 500;
             }
         }
     }
-
 }
 
 
