@@ -73,3 +73,11 @@ function handleFormSubmit(event) {
 function closeModal() {
     document.getElementById('thanks-modal').style.display = 'none';
 }
+
+function closeNavOnClickOutside(event) {
+    if (!sidenav.contains(event.target) && !openBtn.contains(event.target)) {
+        closeNav();
+    }
+}
+
+document.addEventListener('click', closeNavOnClickOutside);

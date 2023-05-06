@@ -72,6 +72,7 @@ a {
     margin-left: 18px;
     text-align: center;
     margin-right: 15px;
+    font-size: 22px;
 }
 
 .num-header {
@@ -90,21 +91,53 @@ a {
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .logo-header {
-        height: 41px;
-        width: 140px;
-    }
+@media screen and (max-width: 1503px) {
 
     a {
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1458px) {
+    
+    a {
+        font-size: 18.5px;
     }
 
-    .num-header {
-        height: 31px;
-        width: 140px;
+}
+
+@media screen and (max-width: 1347px) {
+    
+    a {
+        font-size: 17.5px;
     }
+
+}
+
+@media screen and (max-width: 1302px) {
+    
+    a {
+        font-size: 16.5px;
+    }
+
+}
+
+@media screen and (max-width: 1259px) {
+    
+    a {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+    .num-header {     
+        p {
+            font-size: 14px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 935px) {
@@ -303,9 +336,9 @@ a {
 
 
         .qsn-photo {
-
             grid-area: 1 / 1 / 4 / 4;
-
+max-width: 30vw;
+            
             img {
                 width: 100%;
             }
