@@ -3,7 +3,7 @@
 
 // sass --watch assets/css/style.scss assets/css/index.css
 
-// * {
+// *{
 //     border: 3px solid blue;
 // }
 
@@ -15,13 +15,13 @@ body {
     // width: 100vw;
 }
 
-
 h2 {
     color: #264020;
     font-size: 40px;
     font-weight: 700;
     font-family: 'EB Garamond', serif;
-    margin-top: 70px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     padding-top: 50px;
 }
 
@@ -99,7 +99,7 @@ a {
 }
 
 @media screen and (max-width: 1458px) {
-    
+
     a {
         font-size: 18.5px;
     }
@@ -107,7 +107,7 @@ a {
 }
 
 @media screen and (max-width: 1347px) {
-    
+
     a {
         font-size: 17.5px;
     }
@@ -115,7 +115,7 @@ a {
 }
 
 @media screen and (max-width: 1302px) {
-    
+
     a {
         font-size: 16.5px;
     }
@@ -123,7 +123,7 @@ a {
 }
 
 @media screen and (max-width: 1259px) {
-    
+
     a {
         font-size: 15px;
     }
@@ -132,7 +132,7 @@ a {
 
 @media screen and (max-width: 1025px) {
 
-    .num-header {     
+    .num-header {
         p {
             font-size: 14px;
         }
@@ -311,81 +311,193 @@ a {
 
 /* QUI SOMMES NOUS ? */
 
-.qui-sommes-nous {
+@media screen and (max-width: 700px) {
 
-    // * {
-    //     border: 3px solid blue;
-    // }
+    .qsn-tournesol {
+        display: none;
+    }
 
-    .qsn-container {
-        height: 75vh;
-        width: 100%;
+    .qsn-photo {
 
-        // display: flex;
-        // align-items: flex-start;
-        // justify-content: center;
-
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-
-        // border: 1px solid red;
-
-
-
-        .qsn-photo {
-            max-width: 50vw;
-            grid-area: 1 / 1 / 4 / 4;
-
-            img {
-                width: 100%;
-            }
+        img {
+            width: 100%;
         }
+    }
 
-        .qsn-txt {
-            grid-area: 1 / 3 / 6 / 6;
-            align-self: end;
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+    }
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: justify;
+}
 
-            .qsn-tournesol {
-                max-width: 23vw;
-                display: flex;
-                justify-content: center;
-                align-items: end;
-                flex-direction: column;
 
-                margin-left: 15vw;
+@media screen and (min-width: 700px) {
+
+    .qui-sommes-nous {
+
+        // * {
+        //     border: 3px solid blue;
+        // }
+
+        .qsn-container {
+            height: 60vh;
+            width: 100%;
+
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: center;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            // border: 1px solid red;
+
+
+
+            .qsn-photo {
+                max-width: 60vw;
+                grid-area: 1 / 1 / 4 / 4;
 
                 img {
                     width: 100%;
                 }
             }
 
-            .qsn-p {
-                background-color: #fff;
-                width: -moz-fit-content;
-                width: fit-content;
-                border: 4px solid #A1C862;
-                border-radius: 10px;
-                padding: 15px;
+            .qsn-txt {
+                grid-area: 1 / 3 / 6 / 6;
+                align-self: end;
 
-                p {
-                    margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: justify;
 
-                    font-size: 22px;
-                    font-weight: 500;
+                // margin-bottom: ;
+
+                .qsn-tournesol {
+                    max-width: 23vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    flex-direction: column;
+
+                    margin-left: 15vw;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .qsn-p {
+                    background-color: #fff;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    border: 4px solid #A1C862;
+                    border-radius: 10px;
+                    padding: 15px;
+
+                    p {
+                        margin: 0;
+
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
                 }
             }
         }
     }
+
 }
+
+@media screen and (min-width: 1500px) {
+
+    .qui-sommes-nous {
+
+        .qsn-photo {
+            width: 852px;
+        }
+
+        .qsn-tournesol {
+            width: 325px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 2200px) {
+
+    .qui-sommes-nous {
+
+        .qsn-photo {
+            margin-left: 4vw;
+        }
+
+        .qsn-txt {
+            margin-bottom: 3vh;
+            margin-right: 5vw;
+            width: 90%;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 2580px) {
+
+    .qui-sommes-nous {
+
+        .qsn-photo {
+            margin-left: 10vw;
+        }
+
+        .qsn-tournesol {
+            margin-right: 12vw;
+        }
+
+        .qsn-txt {
+            margin-bottom: 3vh;
+            margin-right: 25vw;
+            width: 85%;
+
+            .qsn-p {
+                p {
+                    font-size: 27px !important;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 3150px) {
+
+    .qui-sommes-nous {
+
+        .qsn-photo {
+            margin-left: 12.5vw;
+        }
+
+        .qsn-tournesol {
+            margin-right: 14vw;
+        }
+
+        .qsn-txt {
+            width: 75%;
+        }
+
+    }
+
+}
+
+
 
 
 /* LES CHEMINS PARTAGES */
@@ -453,11 +565,6 @@ a {
     }
 }
 
-@media screen and (max-width: 978px) {
-
-    /* REGLER PB ESPACEMENT BLANC SOUS LE CARROUSSEL */
-
-}
 
 @media screen and (max-width: 396px) {
 
@@ -472,6 +579,26 @@ a {
             font-size: 29px;
         }
 
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .carousel {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .chemins-partages {
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
     }
 
 }
@@ -632,6 +759,18 @@ a {
 
 }
 
+@media screen and (max-width: 700px) {
+
+    .espaces-partages {
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+    }
+
+}
+
 @media screen and (max-width: 485px) {
 
     .espaces-partages {
@@ -708,6 +847,18 @@ a {
             font-weight: 500;
         }
     }
+}
+
+@media screen and (max-width: 700px) {
+
+    .taches-partagees {
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1400px) {

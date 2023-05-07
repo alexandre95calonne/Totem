@@ -81,3 +81,9 @@ function closeNavOnClickOutside(event) {
 }
 
 document.addEventListener('click', closeNavOnClickOutside);
+
+const sidebarLinks = document.querySelectorAll("#mySidenav a");
+
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', closeNav);
+});
