@@ -48,7 +48,6 @@ function handleFormSubmit(event) {
     event.preventDefault();
     const form = event.target;
 
-    // Envoie les données du formulaire à Formspree
     fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
@@ -59,6 +58,8 @@ function handleFormSubmit(event) {
         if (response.ok) {
             // Affiche la modal
             document.getElementById('thanks-modal').style.display = 'block';
+            // Réinitialise le formulaire
+            form.reset();
         } else {
             alert("Une erreur s'est produite. Veuillez réessayer plus tard.");
         }
