@@ -748,22 +748,22 @@ a {
   margin-top: 10vh;
 }
 .aide-img img {
-  width: 50%;
+  width: 40%;
 }
 
 @media screen and (max-width: 800px) {
   .aide-img img {
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 580px) {
   .aide-img img {
-    width: 80%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 450px) {
   .aide-img img {
-    width: 90%;
+    width: 80%;
   }
 }
 /* ASSOCIES */
