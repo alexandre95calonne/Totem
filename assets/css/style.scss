@@ -1285,4 +1285,19 @@ footer {
         font-size: 18px;
         font-weight: 400;
     }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid transparent;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+        font-size: 18px
+      }
+    
+       a:hover {
+        border-bottom: 1px solid black;
+        color: black;
+      }
 }
