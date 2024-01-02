@@ -867,5 +867,13 @@ footer a:hover {
   border-bottom: 1px solid black;
   color: black;
 }
+footer .docs {
+  padding: 0;
+  padding-bottom: 20px;
+}
+footer .docs a {
+  color: black;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=index.css.map */
