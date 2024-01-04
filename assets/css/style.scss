@@ -34,8 +34,8 @@ h2 {
 }
 
 .section-margin {
-    margin-left: 4vw;
-    margin-right: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 
@@ -316,6 +316,47 @@ a {
 
 }
 
+@media screen and (max-width: 480px) {
+
+
+    .bienvenu {
+
+        .bienvenu-perso {
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+
+            img {
+                height: 463px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .bienvenu {
+        .bienvenu-perso {
+            img {
+                height: 403px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .bienvenu {
+        .bienvenu-perso {
+            img {
+                height: 370px;
+            }
+        }
+    }
+}
+
 
 /* QUI SOMMES NOUS ? */
 
@@ -345,26 +386,15 @@ a {
 
     .qui-sommes-nous {
 
-        // * {
-        //     border: 3px solid blue;
-        // }
-
         .qsn-container {
             height: 60vh;
             width: 100%;
-
-            // display: flex;
-            // align-items: flex-start;
-            // justify-content: center;
 
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
-
-            // border: 1px solid red;
-
 
 
             .qsn-photo {
@@ -385,8 +415,6 @@ a {
                 justify-content: center;
                 flex-direction: column;
                 text-align: justify;
-
-                // margin-bottom: ;
 
                 .qsn-tournesol {
                     max-width: 23vw;
@@ -642,16 +670,26 @@ a {
         }
     }
 
-    .logo-2-generations {
+    .logos {
 
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 6%;
+        padding: 0 1rem;
+        flex-wrap: wrap;
 
-        img {
-            height: 90px;
+        .logo-2-generations {
+            height: 100px;
             width: 440px;
         }
+
+        .logo-vivre-avec {
+            height: 110px;
+            width: 150px;
+            margin: 0 2rem;
+        }
+
     }
 }
 
@@ -695,9 +733,9 @@ a {
 
         }
 
-        .logo-2-generations {
+        .logos {
 
-            img {
+            .logo-2-generations {
                 height: 80px;
                 width: 400px;
             }
@@ -724,11 +762,16 @@ a {
 
         }
 
-        .logo-2-generations {
+        .logos {
 
-            img {
+            .logo-2-generations {
                 height: 70px;
                 width: 350px;
+            }
+
+            .logo-vivre-avec {
+                height: 70px;
+                width: 110px;
             }
         }
 
@@ -755,12 +798,30 @@ a {
 
         }
 
-        .logo-2-generations {
+        .logos {
 
-            img {
+            .logo-2-generations {
                 height: 85px;
                 width: 425px;
             }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .espaces-partages {
+
+        .logos {
+
+            .logo-vivre-avec {
+                height: 110px;
+                width: 150px;
+                margin-top: 2.5rem;
+            }
+
         }
 
     }
@@ -783,11 +844,16 @@ a {
 
     .espaces-partages {
 
-        .logo-2-generations {
+        .logos {
 
-            img {
+            .logo-2-generations {
                 height: 77px;
                 width: 380px;
+            }
+
+            .logo-vivre-avec {
+                height: 70px;
+                width: 110px;
             }
         }
 
@@ -795,13 +861,13 @@ a {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
 
     .espaces-partages {
 
-        .logo-2-generations {
+        .logos {
 
-            img {
+            .logo-2-generations {
                 height: 62px;
                 width: 300px;
             }
@@ -811,15 +877,15 @@ a {
 
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 335px) {
 
     .espaces-partages {
 
-        .logo-2-generations {
+        .logos {
 
-            img {
-                height: 56px;
+            .logo-2-generations {
                 width: 250px;
+                height: 55px;
             }
         }
 
@@ -920,10 +986,12 @@ a {
         .taches-content {
 
             flex-direction: column-reverse;
+            
 
             img {
                 height: 450px;
                 width: 320px;
+                margin: 0;
             }
 
             p {
@@ -1294,14 +1362,14 @@ footer {
         padding: 0;
         margin-left: 5px;
         font-size: 18px
-      }
-    
-       a:hover {
+    }
+
+    a:hover {
         border-bottom: 1px solid black;
         color: black;
-      }
+    }
 
-      .docs {
+    .docs {
         padding: 0;
         padding-bottom: 20px;
 
@@ -1309,5 +1377,13 @@ footer {
             color: black;
             font-weight: 600;
         }
-      }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    footer {
+        padding: 1.2rem;
+    }
+
 }

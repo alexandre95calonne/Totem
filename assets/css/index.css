@@ -24,8 +24,8 @@ h2 {
 }
 
 .section-margin {
-  margin-left: 4vw;
-  margin-right: 4vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .green-txt {
@@ -240,6 +240,28 @@ a {
     width: 393px;
   }
 }
+@media screen and (max-width: 480px) {
+  .bienvenu .bienvenu-perso {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .bienvenu .bienvenu-perso img {
+    height: 463px;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bienvenu .bienvenu-perso img {
+    height: 403px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .bienvenu .bienvenu-perso img {
+    height: 370px;
+  }
+}
 /* QUI SOMMES NOUS ? */
 @media screen and (max-width: 700px) {
   .qsn-tournesol {
@@ -441,14 +463,22 @@ a {
   height: 360px;
   width: 630px;
 }
-.espaces-partages .logo-2-generations {
+.espaces-partages .logos {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 6%;
+  padding: 0 1rem;
+  flex-wrap: wrap;
 }
-.espaces-partages .logo-2-generations img {
-  height: 90px;
+.espaces-partages .logos .logo-2-generations {
+  height: 100px;
   width: 440px;
+}
+.espaces-partages .logos .logo-vivre-avec {
+  height: 110px;
+  width: 150px;
+  margin: 0 2rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -468,7 +498,7 @@ a {
     height: 220px;
     width: 410px;
   }
-  .espaces-partages .logo-2-generations img {
+  .espaces-partages .logos .logo-2-generations {
     height: 80px;
     width: 400px;
   }
@@ -481,9 +511,13 @@ a {
     height: 220px;
     width: 380px;
   }
-  .espaces-partages .logo-2-generations img {
+  .espaces-partages .logos .logo-2-generations {
     height: 70px;
     width: 350px;
+  }
+  .espaces-partages .logos .logo-vivre-avec {
+    height: 70px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 872px) {
@@ -497,9 +531,16 @@ a {
     display: none;
     justify-content: center;
   }
-  .espaces-partages .logo-2-generations img {
+  .espaces-partages .logos .logo-2-generations {
     height: 85px;
     width: 425px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .espaces-partages .logos .logo-vivre-avec {
+    height: 110px;
+    width: 150px;
+    margin-top: 2.5rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -510,21 +551,25 @@ a {
   }
 }
 @media screen and (max-width: 485px) {
-  .espaces-partages .logo-2-generations img {
+  .espaces-partages .logos .logo-2-generations {
     height: 77px;
     width: 380px;
   }
+  .espaces-partages .logos .logo-vivre-avec {
+    height: 70px;
+    width: 110px;
+  }
 }
-@media screen and (max-width: 400px) {
-  .espaces-partages .logo-2-generations img {
+@media screen and (max-width: 425px) {
+  .espaces-partages .logos .logo-2-generations {
     height: 62px;
     width: 300px;
   }
 }
-@media screen and (max-width: 310px) {
-  .espaces-partages .logo-2-generations img {
-    height: 56px;
+@media screen and (max-width: 335px) {
+  .espaces-partages .logos .logo-2-generations {
     width: 250px;
+    height: 55px;
   }
 }
 /* LES TACHES PARTAGEES */
@@ -589,6 +634,7 @@ a {
   .taches-partagees .taches-content img {
     height: 450px;
     width: 320px;
+    margin: 0;
   }
   .taches-partagees .taches-content p {
     width: 100%;
@@ -874,6 +920,12 @@ footer .docs {
 footer .docs a {
   color: black;
   font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
